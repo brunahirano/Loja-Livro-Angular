@@ -1,0 +1,59 @@
+<!-- <div class="container text-center my-5">
+  <h2>Lista de livros</h2>
+
+  <div class="card mb-5" *ngFor="let item of Livros">
+    <img class="card-img-top" [src]="item.foto" [alt]="item.nome" style="width: 150px"/>
+    <div class="card-body">
+      <h5 class="card-title">{{item.nome}}</h5>
+      <p class="card-text">Autor: {{item.autor}}</p>
+      <button class="fixed-bottom" (click)="editar(item.id)" type="button" class="btn btn-success">Editar</button>
+      <button (click)="mostrarModal(item.id)" type="button" class="btn btn-danger">Excluir</button>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="container text-center mt-5">
+  <h2>Lista de livros</h2>
+
+  <table class="table mt-3">
+    <thead>
+      <tr class="text-center">
+        <th scope="col">Id</th>
+        <th scope="col">Nome do Livro</th>
+        <th scope="col">Autor do livro</th>
+        <th scope="col">Foto</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Excluir</th>
+      </tr>
+    </thead>
+
+  <!--*ngFor é para deixar minha tabela dinâmica, tipo o #each do handlebars-->
+  <tbody class="text-center">
+      <tr *ngFor="let item of Livros">
+        <th>{{item.id}}</th>
+        <td>{{item.nome}}</td>
+        <td>{{item.autor}}</td>
+        <td><img [src]="item.foto" [alt]="item.nome" style="width: 80px;"></td>
+        <td>
+          <button (click)="editar(item.id)" type="button" class="btn btn-success">Editar</button>
+        </td>
+        <td>
+          <button (click)="mostrarModal(item.id)" type="button" class="btn btn-danger">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div *ngIf="isModal">
+  <!--mesma coisa que se isMOdal==true-->
+  <div class="minhaModal">
+    <div class="tituloModal bg-danger text-white">
+      <h5>Aviso</h5>
+    </div>
+    <h6 class="my-4">Confirma essa operação?</h6>
+    <button class="btn btn-outline-danger mx-1" (click)="cancelarAcao()">Cancelar</button>
+    <button class="btn btn-danger mx-1" (click)="confirmarAcao()">Confirmar</button>
+  </div>
+</div>

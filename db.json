@@ -1,0 +1,52 @@
+{
+  "Livros": [
+    {
+      "id": 1,
+      "nome": "A arte da Guerra",
+      "autor": "Sun TZU 2",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/41Z+Iod3PDL._SX342_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Breve História sobre quase tudo",
+      "autor": "Bill Bryson",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/31J-8UEp5OL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
+    },
+    {
+      "nome": "A Coragem de Ser Imperfeito",
+      "autor": "Brené Brown",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/51mMKXjxBTS._SY344_BO1,204,203,200_QL70_ML2_.jpg",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "nome": "As armas da persuasão 2.0",
+      "autor": " Robert B. Cialdini ",
+      "foto": "https://m.media-amazon.com/images/I/41mvMG3KhUS.jpg"
+    },
+    {
+      "id": 6,
+      "nome": "O Código Da Vinci",
+      "autor": "Dan Brown ",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/51DaS6hNpPL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
+    },
+    {
+      "id": 7,
+      "nome": "O poder do hábito",
+      "autor": "Charles Duhigg",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/51Xby92J9KL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
+    },
+    {
+      "id": 8,
+      "nome": "O pequeno Príncipe",
+      "autor": "Antoine de Saint-Exupery",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/41OK2BtqoeL._SX329_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 9,
+      "nome": "Harry potter e a pedra filosofal",
+      "autor": " J. K. Rowling",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/518mqZ7A31L._SX332_BO1,204,203,200_.jpg"
+    }
+  ]
+}

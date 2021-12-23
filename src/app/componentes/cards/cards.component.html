@@ -1,0 +1,27 @@
+<div class="container text-center my-5">
+  <h2>Lista de livros</h2>
+
+  <div class="card mb-5" *ngFor="let item of Livros">
+    <img class="card-img-top" [src]="item.foto" [alt]="item.nome" style="width: 150px" />
+    <div class="card-body ">
+      <h5 class="card-title">{{item.nome}}</h5>
+      <p class="card-text">Autor: {{item.autor}}</p>
+      <div class="mt-auto">
+        <button (click)="editar(item.id)" type="button" class="btn btn-success mt-auto">Editar</button>
+        <button (click)="mostrarModal(item.id)" type="button" class="btn btn-danger mt-auto">Excluir</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="isModal">
+  <!--mesma coisa que se isMOdal==true-->
+  <div class="minhaModal">
+    <div class="tituloModal bg-danger text-white">
+      <h5>Aviso</h5>
+    </div>
+    <h6 class="my-4">Confirma essa operação?</h6>
+    <button class="btn btn-outline-danger mx-1" (click)="cancelarAcao()">Cancelar</button>
+    <button class="btn btn-danger mx-1" (click)="confirmarAcao()">Confirmar</button>
+  </div>
+</div>

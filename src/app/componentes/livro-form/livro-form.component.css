@@ -1,0 +1,11 @@
+.minhaModal{
+  width: 300px;
+  height: 150px;
+  border: solid 1px gray;
+  text-align: center;
+  position: fixed;
+  top: 200px;
+  left: 500px;
+  background-color: honeydew;
+}
+
